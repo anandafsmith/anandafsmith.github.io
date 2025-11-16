@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="row gx-0 mb-3 pb-4 border-bottom">
+  <h3 class="fw-bold">research</h3>
+  <p>Here is some fun physics I did as an undergradute. Stay tuned for future graduate-level antics.</p>
+  {{content}}
+</div>
+{% for project in site.research %}
+    <!-- <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3> -->
+  <div class="row gx-0 mb-3 pb-5 border-bottom pt-3">
+        <!-- <br> -->
+    <h4>{{ project.title }}</h4>
+    <div class="col-md-7 pe-2">{{ project.content }}</div>
+    <div class="col-md-5" style="text-align: center;">
+      <img src="{{ site.github.url }}/assets/img/{{ project.picture }}" alt="{{ project.alt }}" style="vertical-align: middle; "width="{{ project.width}}">
+    </div>
+  </div>
+{% endfor %}
+

@@ -1,8 +1,12 @@
 ---
 layout: home
-title: "Home"
+title: "home"
 ---
 
-This theme allows an academic person to showcase their research interests, publications, research group, curriculum vitae, any courses that they may be teaching, or anything else they may want to put out into the world.
+I'm a first year physics PhD student at [MIT's Center for Theoretical Physics -- a Leinweber Institute](https://physics.mit.edu/research/labs-centers/mit-center-for-theoretical-physics-leinweber-institute/).
+Before MIT, I obtained my bachelors degree in Mathematics and Physics from Case Western Reserve University in Spring 2025.
 
-Academics can use this home page to describe their research interests, display their latest publications, or provide an introduction to their research group.
+My current research interests lie at the intersection of theoretical and data-driven cosmology. 
+For snippets of the physics I've done prior, see my [research]({{site.github.url}}/research) page (or my [CV]({{site.github.url}}/ananda_smith_cv.pdf), if you're feeling particularly nosy).
+
+Interested in chatting? Feel free to email me at afs03 \[at\] mit \[dot\] edu or connect with me on [LinkedIn](https://www.linkedin.com/in/anandasmith/).

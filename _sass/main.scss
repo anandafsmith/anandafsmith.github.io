@@ -1,14 +1,55 @@
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-$linkColor: #212529 !important;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+$backgroundColor: white;
+$bodyColor: #09333e;
+$linkColor: #277c9c !important;
+
+// $headerFont: "Lato", sans-serif;
+// $bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: "Lato", sans-serif;
+
+// header .fs-4.fw-bold,
+// header span {
+//   color: $bodyColor !important;
+//   font-weight: 700;
+// }
+
+// .site-title {
+//   font-family: $bodyFont;
+//   font-weight: 700;
+//   letter-spacing: 0.5px;
+// }
+
+html {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: $bodyFont;
+  letter-spacing: -0.4px;
+}
+
+h1, h2, h3, h4, h5, h6, header .site-title {
+  font-family: $bodyFont;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+header {
+  font-family: $bodyFont;
+  color: $bodyColor !important;
+  font-weight: 700;
+  letter-spacing: 1.0px;
 }
 
 body a {
-  color: $linkColor
+  color: $linkColor;
+}
+
+nav a {
+  color: $bodyColor !important;
 }

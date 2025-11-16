@@ -1,24 +1,19 @@
 ---
 layout: default
 ---
-
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <h3 class="fw-bold">Research</h3>
+<div class="row d-flex gx-0 mb-5 pb-5 border-bottom">
+  <h3 class="fw-bold">hi, i'm ananda!</h3>
+  <div class="col-md-7">
     {{ content }}
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/home.jpg" alt="Home" width="100%">
+  <div class="col-md-5" style="text-align: center;">
+    <img src="{{ site.github.url }}/assets/img/ananda_aps_headshot.jpg" alt="me!" width="75%">
   </div>
 </div>
-
-{% include publications.html %}
-
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Updates</h3>
-    {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
-    {% endfor %}
-  </div>
-</div>
+<!-- 
+<div class="row gx-0 mb-3 pb-5 border-bottom">
+  <p class="fw-bold">check out my friend's websites below :)</p>
+  {% for friend in site.data.settings.friends %}
+    <a class="col-md-2 align-items-center" href="{{ friend.url }}">{{ friend.name }}</a>
+  {% endfor %}
+</div> -->
