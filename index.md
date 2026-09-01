@@ -3,7 +3,7 @@ layout: home
 title: "home"
 ---
 
-I'm a rising second year physics PhD student at [MIT's Center for Theoretical Physics -- a Leinweber Institute](https://physics.mit.edu/research/labs-centers/mit-center-for-theoretical-physics-leinweber-institute/).
+I'm a second year physics PhD student at [MIT's Center for Theoretical Physics -- a Leinweber Institute](https://physics.mit.edu/research/labs-centers/mit-center-for-theoretical-physics-leinweber-institute/).
 Before MIT, I obtained my bachelors degree in Mathematics and Physics from Case Western Reserve University in Spring 2025.
 
 Currently I work at the intersection of theoretical and data-driven cosmology, primarily with [Misha Ivanov](https://physics.mit.edu/faculty/mikhail-ivanov/).

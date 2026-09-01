@@ -3,18 +3,41 @@ layout: default
 ---
 <div class="row gx-0 mb-3 pb-4 border-bottom">
   <h3 class="fw-bold">research</h3>
-  <p>Here is some fun physics I did as an undergradute. Stay tuned for future graduate-level antics.</p>
+  <p>Welcome to my research page! Thus far in my PhD, I have primarily worked on applications of the effective field theory of large scale structure, but I am interested in the intersection between theoretical and data-driven cosmology more broadly. 
+    See below for graduate-level and undergraduate-level antics!
+  </p>
   {{content}}
 </div>
-{% for project in site.research %}
+
+<div class="row gx-0 mb-3 pb-5 border-bottom pt-3">
+  <h3>grad level antics</h3>
+  {% assign grad_proj = site.research | where_exp: "item", "item.path contains '/grad/'" %}
+  {% for project in grad_proj %}
     <!-- <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3> -->
-  <div class="row gx-0 mb-3 pb-5 border-bottom pt-3">
+    <div class="row gx-0 mb-3 pb-5 pt-3">
         <!-- <br> -->
-    <h4>{{ project.title }}</h4>
-    <div class="col-md-7 pe-2">{{ project.content }}</div>
-    <div class="col-md-5" style="text-align: center;">
-      <img src="{{ site.github.url }}/assets/img/{{ project.picture }}" alt="{{ project.alt }}" style="vertical-align: middle; "width="{{ project.width}}">
+      <h4>{{ project.title }}</h4>
+      <div class="col-md-7 pe-2">{{ project.content }}</div>
+      <div class="col-md-5" style="text-align: center;">
+        <img src="{{ site.github.url }}/assets/img/{{ project.picture}}" alt="{{ project.alt }}" style="vertical-align: middle;" width="{{project.width}}"/>
+      </div>
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
+</div>
+
+<div class="row gx-0 mb-3 pb-5 border-bottom pt-3">
+  <h3>undergrad level antics</h3>
+  {% assign undergrad_proj = site.research | where_exp: "item", "item.path contains '/undergrad/'" %}
+  {% for project in undergrad_proj %}
+    <!-- <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3> -->
+    <div class="row gx-0 mb-3 pb-5 pt-3">
+        <!-- <br> -->
+      <h4>{{ project.title }}</h4>
+      <div class="col-md-7 pe-2">{{ project.content }}</div>
+      <div class="col-md-5" style="text-align: center;">
+        <img src="{{ site.github.url }}/assets/img/{{ project.picture }}" alt="{{ project.alt }}" style="vertical-align: middle;" width="{{ project.width}}">
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
